@@ -14,3 +14,22 @@ var krystian = {
 
 kaja.przedstawOsobe();
 krystian.przedstawOsobe();
+
+//klasa
+
+function Osoba(imie, nazwisko){
+    this.imie = imie;
+    this.nazwisko = nazwisko;
+    this.wyswietlInfo = function(){
+        console.log('Imię: ' + this.imie + ', ' + 'Nazwisko: ' + this.nazwisko);
+    }
+}
+
+var krystian = new Osoba('Krystian', 'Dziopa');
+
+krystian.wyswietlInfo();
+
+var lukasz = new Osoba('Łukasz', 'Badocha');
+
+lukasz.wyswietlInfo();
+
